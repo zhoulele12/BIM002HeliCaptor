@@ -61,7 +61,7 @@ void loop() {
   data.lthrottle = map(axValue,0,1023,0,90);
   data.rthrottle = map(bxValue,0,1023,0,90);
   
-  Serial.println(data.lthrottle);//
-  Serial.println(data.rthrottle);//
+//  Serial.println(data.lthrottle);/
+//  Serial.println(data.rthrottle);/
   radio.write(&data,sizeof(Signal));
 }
